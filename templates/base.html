@@ -1,0 +1,36 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+</head>
+<body class="bg-green-50">
+    <div class="container mx-auto mt-4">
+        <header class="bg-orange-300">
+            <h1 class="text-3xl px-4 py-6 text-center">"Snickity Snacks Take Two"</h1>
+            <nav class="flex-row justify-end">
+                <ul class="flex space-x-4">
+                    <li><a class="underline" href="/">Home</a></li>
+                    <li><a class="underline" href="{% url 'snack_create' %}">Create</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+        <footer class="bg-orange-300">
+            <p>&copy; 2024</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="text-3xl text-green-800 p-6">List of Snacks...</h1>
+
+<a href="{% url 'snack_create' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 p-3">Add a snack</a>
+ 
+<ul class="flex-col p-2">
+    {% for snack in snacks %}
+        <li class="flex-auto p-2 text-2xl text-green-800 hover:text-green-600
+        ">
+            <a href="{% url 'snack_detail' snack.pk %}">
+                {{ snack.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
