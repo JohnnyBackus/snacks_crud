@@ -1,40 +1,44 @@
 
-# LAB - Class xx
+# LAB - Class 28
 
-## Project: Project Name Here
+## Project: Django CRUD and Forms
 
-### Author: Student/Group Name
+### Author: Johnny Backus
 
 ### Links and Resources
 
-- [Back-end Server URL] # Fill in when applicable
-- [Front-end Application URL] # Fill in when applicable
 - [CodeFellows Python Lab Instructions](https://codefellows.github.io/code-401-python-guide/reference/submission-instructions/labs/)
 - [CodeFellows README template](https://codefellows.github.io/code-401-python-guide/reference/submission-instructions/labs/README-template.html)
 - lecture demo code used for reference
-- [ChatGPT chat]() # Fill in when applicable
-- GitHub CoPilot used for... #Fill in when applicable
+- Flobite used for Components
+- assistance received from Copilot for Tailwinds CSS
 
 ### Setup
-- Create a `.env` file with the following requirements:
-  - PORT - Port Number
-  - DATABASE_URL - URL to the running Postgres instance/db
-- OR *.env requirements: n/a*
+
+*.env requirements: n/a*
 
 ### How to Initialize/Run Your Application
 
 - Install requirements.txt
-- Example: Enter CLI command "python manage.py runserver"
+- enter CLI command "python manage.py runserver"
+- view content in local port indicated by terminal
 
 ### How to Use Your Library
-- Provide instructions here if applicable
+
+- n/a
 
 ### Tests
-#### How to Run Tests
-- Describe how to run tests
+
+- Run tests with CLI command "python manage.py test"
 
 #### Tests of Note
-- Any noteworthy information about the tests
+
+**In accordance with Lab Instructions:**
+
+- Test for snack_list url: status code 200,
+- Test for base and snack_list url template use, including ancestor template.
+- Tests for CRUD
 
 #### Incomplete Tests
-- Describe any tests that were not completed or skipped
+
+- n/a
